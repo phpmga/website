@@ -11,6 +11,47 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
+var bowerDir = 'vendor/bower_components/';
+
+elixir(function (mix) {
+    // Copy jQuery dependencies
+    mix.copy(bowerDir + 'jquery/dist/jquery.min.js', 'resources/assets/js/jquery.min.js');
+
+    // Copy Font Awesome dependencies
+    mix.copy(bowerDir + 'font-awesome/fonts', 'public/build/fonts');
+    mix.copy(bowerDir + 'font-awesome/css/font-awesome.min.css', 'resources/assets/css/font-awesome.min.css');
+
+    // Copy Angular dependencies
+    mix.copy(bowerDir + 'angular/angular.min.js', 'resources/assets/js/angular.min.js');
+    mix.copy(bowerDir + 'angular-route/angular-route.min.js', 'resources/assets/js/angular-route.min.js');
+
+    // Copy Semantic UI dependencies
+    mix.copy(bowerDir + 'semantic-ui/dist/semantic.min.js', 'resources/assets/js/semantic.min.js');
+    mix.copy(bowerDir + 'semantic-ui/dist/semantic.min.css', 'resources/assets/css/semantic.min.css');
+    mix.copy(bowerDir + 'semantic-ui/dist/themes', 'public/build/css/themes');
+
+    // Mix vendor resources
+    mix.styles([
+        'resources/assets/css/semantic.min.css',
+        'resources/assets/css/font-awesome.min.css'
+    ], 'public/css/vendor.css');
+
+    mix.scripts([
+        'resources/assets/js/jquery.min.js',
+        'resources/assets/js/semantic.min.js',
+        'resources/assets/js/angular.min.js',
+        'resources/assets/js/angular-route.min.js'
+    ], 'public/js/vendor.js');
+
+    // Mix custom resources
+    mix.styles([
+        'resources/assets/css/main.css'
+    ], 'public/css/app.css');
+
+    mix.scripts([
+        'resources/assets/js/main.js'
+    ], 'public/js/app.js');
+
+    // Build version
+    mix.version(['css/app.css', 'js/app.js']);
 });
