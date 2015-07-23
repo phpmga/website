@@ -1,2 +1,3 @@
-# website
-phpmga.net
+# phpmga.net
+
+Site oficial da comunidade PHP de Maringá - PR
