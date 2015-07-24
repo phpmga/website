@@ -46,12 +46,12 @@ elixir(function (mix) {
     // Mix custom resources
     mix.styles([
         'resources/assets/css/main.css'
-    ], 'public/css/app.css');
+    ], 'public/css/main.css');
 
     mix.scripts([
         'resources/assets/js/main.js'
-    ], 'public/js/app.js');
+    ], 'public/js/main.js');
 
     // Build version
-    mix.version(['css/app.css', 'js/app.js']);
+    mix.version(['css/vendor.css', 'js/vendor.js', 'css/main.css', 'js/main.js']);
 });
