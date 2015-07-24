@@ -42,7 +42,19 @@ or composer path:
 composer install
 ```
 
-5 - Start PHP Artisan Built-in web server:
+5 - Create file .env 
+
+```bash
+cp .env.example
+```
+
+6 - Set the application key
+
+```bash
+php artisan key:generate
+```
+
+7 - Start PHP Artisan Built-in web server:
 
 ```bash
 php artisan serve
