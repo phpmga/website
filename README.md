@@ -48,6 +48,30 @@ composer install
 php artisan serve
 ```
 
+## Install AngularJS & Semantic UI
+
+1 - Install bower and npm dependencies:
+
+```bash
+npm install -g bower
+```
+
+```bash
+bower install
+```
+
+2 - Install gulp and elixir:
+
+```bash
+npm install
+```
+
+3 - Run gulp to build production:
+
+```bash
+gulp --production
+```
+
 ##Copyright and license
 
 Code and documentation copyright (c) 2015, PHP Community Maringa.
