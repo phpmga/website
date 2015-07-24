@@ -45,7 +45,7 @@ composer install
 5 - Create file .env 
 
 ```bash
-cp .env.example
+cp .env.example .env
 ```
 
 6 - Set the application key
