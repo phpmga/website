@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"main.css","sourcesContent":["body {\n    font-family: 'Lato', sans-serif;\n    font-size: 14px;\n    font-weight: 400;\n}\n\nh1 {\n    font-family: 'Lato', sans-serif;\n    font-weight: 400;\n}"],"sourceRoot":"/source/"}

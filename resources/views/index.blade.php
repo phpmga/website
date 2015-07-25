@@ -14,24 +14,6 @@
 </head>
 <body>
 
-
-<div class="ui container">
-    <div class="ui secondary  menu">
-        <a href="/#/" class="active item">Home</a>
-        <a href="/#/about" class="item">Sobre</a>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui icon input">
-                    <input type="text" placeholder="Localizar...">
-                    <i class="search link icon"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br>
-
 <div ng-view>
 
 </div>
