@@ -14,7 +14,6 @@
 </head>
 <body>
 
-
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu phpmga-menu-hidden">
     <div class="ui container">
@@ -91,7 +90,6 @@
                 </div>
                 <div class="seven wide column">
                     <h4 class="ui inverted header">Footer Header</h4>
-
                     <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
             </div>

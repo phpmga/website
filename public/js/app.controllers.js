@@ -4,7 +4,18 @@ angular.module('app.controllers', [])
 
         function ($scope, $rootScope, $http, $location) {
 
-            // ...
+            $scope.$on('$routeChangeSuccess', function () {
+
+                jQuery('.masthead').visibility({
+                    once: false,
+                    onBottomPassed: function() {
+                        jQuery('.fixed.menu').transition('fade in');
+                    },
+                    onBottomPassedReverse: function() {
+                        jQuery('.fixed.menu').transition('fade out');
+                    }
+                });
+            });
 
         }
 
