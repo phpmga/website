@@ -13,40 +13,6 @@ $(document).ready(function () {
     // create sidebar and attach to menu open
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
 
-    $('#contact_form')
-        .form({
-            on: 'blur',
-            inline: true,
-            fields: {
-                name: {
-                    identifier: 'name',
-                    rules: [
-                        {
-                            type: 'empty',
-                            prompt: 'Please enter a value'
-                        }
-                    ]
-                },
-                email: {
-                    identifier: 'email',
-                    rules: [
-                        {
-                            type: 'empty',
-                            prompt: 'Please select a dropdown value'
-                        }
-                    ]
-                },
-                subject: {
-                    identifier: 'subject',
-                    rules: [
-                        {
-                            type: 'checked',
-                            prompt: 'Please check the checkbox'
-                        }
-                    ]
-                }
-            }
-        });
 });
 
 // efeitos de rolagem

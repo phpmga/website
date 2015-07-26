@@ -31,18 +31,18 @@ Route::any('/contact', function () {
 
     if(!empty($message)) {
 
-        $result = Mail::raw($message, function ($message) {
+//        $result = Mail::raw($message, function ($message) {
+//
+//            $message->from(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
+//            $message->sender(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
+//            $message->subject(Request::get('subject', 'Contato pelo site'));
+//
+//            $message->to('contato@phpmga.net', 'PHP-MGA');
+//        });
 
-            $message->from(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
-            $message->sender(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
-            $message->subject(Request::get('subject', 'Contato pelo site'));
-
-            $message->to('contato@phpmga.net', 'PHP-MGA');
-        });
-
-        return Response::make($result);
+        return Response::json(['status' => 'success', 'message' => 'Contato enviado com sucesso!']);
 
     } else {
-        return Response::json(['error' => 'Digite uma mensagem!']);
+        return Response::json(['status' => 'error', 'message' => 'Houve um problema ao enviar sua mensagem.']);
     }
 });

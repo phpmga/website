@@ -146,6 +146,14 @@ h1 {
     display: none;
 }
 
+.ui.message {
+    border-radius: 0px;
+}
+
+.ui.message .header:not(.ui), .ui.vertical.stripe p {
+    font-size: inherit;
+}
+
 @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
         display: none !important;

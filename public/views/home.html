@@ -54,12 +54,20 @@
             <a href="#">Case Studies</a>
         </h4>
 
-        <form id="contact_form" class="ui form">
+        <div class="ui small {{ sendmail.type }} message" ng-show="sendmail.valid">
+            <i class="close icon"></i>
+            <div class="header">
+                {{ sendmail.message  }}
+            </div>
+            <p>You may now log-in with the username you have chosen</p>
+        </div>
+
+        <form id="contact_form" class="ui form" ng-submit="login()">
             <div class="field">
                 <label>Nome Completo</label>
 
                 <div class="ui right corner labeled input large">
-                    <input placeholder="$name = " name="name" type="text">
+                    <input placeholder="$name = " name="name" type="text" ng-model="name">
 
                     <div class="ui right corner label">
                         <i class="asterisk icon"></i>
@@ -70,7 +78,7 @@
                 <label>E-mail</label>
 
                 <div class="ui right corner labeled input large">
-                    <input class="large" placeholder="$email = " name="email" type="text">
+                    <input class="large" placeholder="$email = " name="email" type="text" ng-model="email">
 
                     <div class="ui right corner label">
                         <i class="asterisk icon"></i>
@@ -81,7 +89,7 @@
                 <label>Assunto</label>
 
                 <div class="ui right corner labeled input large">
-                    <input placeholder="$assunto = " name="subject" type="text">
+                    <input placeholder="$subject = " name="subject" type="text" ng-model="subject">
 
                     <div class="ui right corner label">
                         <i class="asterisk icon"></i>
@@ -92,14 +100,14 @@
                 <label>Mensagem</label>
 
                 <div class="ui right corner labeled input large">
-                    <textarea placeholder="$message = " name="message"></textarea>
+                    <textarea placeholder="$message = " name="message" ng-model="message"></textarea>
 
                     <div class="ui right corner label">
                         <i class="asterisk icon"></i>
                     </div>
                 </div>
             </div>
-            <div class="ui phpmga-button-primary big submit button">Enviar</div>
+            <div id="submit" class="ui phpmga-button-primary big submit button" ng-click="login()">Enviar</div>
         </form>
     </div>
 </div>
