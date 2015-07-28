@@ -47,7 +47,6 @@
 <!-- Page Contents -->
 <div class="pusher">
     <div id="phpmga_background" class="ui inverted vertical masthead center aligned">
-
         <div class="ui container">
             <div class="ui large secondary inverted pointing menu phpmga-menu">
                 <a class="toc item">
@@ -59,6 +58,7 @@
                 <a class="item">Contato</a>
             </div>
         </div>
+
     </div>
 
     <div ng-view>
