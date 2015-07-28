@@ -1,3 +1,11 @@
+html, body, #phpmga_background {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
@@ -9,11 +17,26 @@ h1 {
     font-weight: 400;
 }
 
-#container-1 {
-    min-height: 587px
+.pusher {
+    min-height: 100% !important;
+    position: relative !important;
 }
 
-.hidden {
+#container-1 {
+    min-height: 600px;
+}
+
+#container-2 {
+    min-height: 600px;
+    background-color: rgb(239, 239, 239);
+}
+
+#container-3 {
+    min-height: 600px;
+    background-color: #fff;
+}
+
+.about.hidden {
     display: none !important
 }
 
@@ -22,10 +45,63 @@ h1 {
     border-radius: 0px !important;
 }
 
+.phpmga-perfil {
+    border-radius: 0px !important;
+}
+
+.phpmga-perfil div.image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #79BD9A;
+}
+
+.phpmga-perfil div img {
+    padding: 10px;
+}
+
+.ui.circular.image, .ui.circular.image>*, .ui.circular.images .image, .ui.circular.images .image>* {
+    border-radius: 500rem !important;
+}
+
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+
+}
+
+.phpmga-about h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #3B8686 !important;
+}
+
+.phpmga-staff h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #2185d0 !important;
+}
+
+.phpmga-contact h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #F0752B !important;
+}
+
+.phpmga-about p.phpmga-todo,
+.phpmga-about p.phpmga-todo span {
+    font-family: 'komika_titleregular' !important;
+    font-size: 1.43em !important;
+}
+
+.phpmga-todo span {
+    color: #ccc;
+}
+
+.phpmga-about p {
+    font-size: 1.23em !important;
+}
+
 /* avlima */
 #phpmga_background {
-    background: transparent url("../../images/topo-phpmga.png") no-repeat center fixed;
-    background-size: cover;
+    background: transparent url("../../images/topo-phpmga.png") no-repeat center center fixed;
 }
 
 /* avlima */
@@ -182,3 +258,37 @@ h1 {
         font-size: 1.5em;
     }
 }
+
+@font-face {
+    font-family: '2dumbregular';
+    src: url('../fonts/2Dumb-webfont.eot');
+    src: url('../fonts/2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2Dumb-webfont.woff') format('woff'),
+    url('../fonts/2Dumb-webfont.ttf') format('truetype'),
+    url('../fonts/2Dumb-webfont.svg#2dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '3dumbregular';
+    src: url('../fonts/3Dumb-webfont.eot');
+    src: url('../fonts/3Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/3Dumb-webfont.woff') format('woff'),
+    url('../fonts/3Dumb-webfont.ttf') format('truetype'),
+    url('../fonts/3Dumb-webfont.svg#3dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'komika_titleregular';
+    src: url('../fonts/KomikaTitle-webfont.eot');
+    src: url('../fonts/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KomikaTitle-webfont.woff') format('woff'),
+    url('../fonts/KomikaTitle-webfont.ttf') format('truetype'),
+    url('../fonts/KomikaTitle-webfont.svg#komika_titleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
