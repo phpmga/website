@@ -25,24 +25,4 @@ Route::get('/', function () {
 |
 */
 
-Route::any('/contact', function () {
-
-    $message = trim(strip_tags(Request::get('message')));
-
-    if(!empty($message)) {
-
-//        $result = Mail::raw($message, function ($message) {
-//
-//            $message->from(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
-//            $message->sender(Request::get('email', 'site@phpmga.net'), Request::get('name', 'Contato pelo site'));
-//            $message->subject(Request::get('subject', 'Contato pelo site'));
-//
-//            $message->to('contato@phpmga.net', 'PHP-MGA');
-//        });
-
-        return Response::json(['status' => 'success', 'message' => 'Contato enviado com sucesso!']);
-
-    } else {
-        return Response::json(['status' => 'error', 'message' => 'Houve um problema ao enviar sua mensagem.']);
-    }
-});
+Route::controller('email', 'EmailController');

@@ -15,8 +15,9 @@ return [
     */
 
     'mailgun' => [
-        'domain' => '',
-        'secret' => '',
+        'domain' => 'phpmga.net',
+        'secret' => 'key-bd4b1d668a5b3c4a73c7f9612015b815',
+        'contact' => 'contato@phpmga.net'
     ],
 
     'mandrill' => [

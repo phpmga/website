@@ -58,7 +58,7 @@ angular.module('app.controllers', [])
                 on: blur,
                 inline: true,
                 onSuccess: function () {
-                    $http.post('/contact', {
+                    $http.post('/email/contact', {
                         name: $scope.name,
                         email: $scope.email,
                         subject: $scope.subject,
