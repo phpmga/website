@@ -17,21 +17,26 @@ h1 {
     font-weight: 400;
 }
 
-.pusher {
-    min-height: 100% !important;
-    position: relative !important;
+.pushable > .pusher {
+    -webkit-backface-visibility: inherit; /* Chrome, Safari, Opera */
+    backface-visibility: inherit;
+    position: inherit;
 }
 
 #container-about {
     min-height: 600px;
 }
 
-#container-2 {
+#container-about img {
+    margin: auto;
+}
+
+#container-staff {
     min-height: 600px;
     background-color: rgb(239, 239, 239);
 }
 
-#container-3 {
+#container-contact {
     min-height: 600px;
     background-color: #fff;
 }
@@ -101,7 +106,8 @@ h1 {
 
 /* avlima */
 #phpmga_background {
-    background: transparent url("../../images/topo-phpmga.png") no-repeat center center fixed;
+    background: transparent url("../../images/topo-phpmga.png") no-repeat center fixed;
+    background-size: cover;
 }
 
 /* avlima */
@@ -255,7 +261,7 @@ h1 {
     }
 
     #phpmga_background {
-        background: transparent url("../../images/topo-phpmga-ret-small.png") no-repeat center;
+        background: transparent url("../../images/topo-phpmga.png") no-repeat center fixed;
     }
 
     .masthead h1.ui.header {
