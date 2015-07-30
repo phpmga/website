@@ -87,17 +87,19 @@ h1 {
 .phpmga-contact h3 {
     font-family: '3dumbregular' !important;
     font-size: 2.714rem !important;
-    color: #F0752B !important;
+    color: #79BD9A !important;
 }
 
+form label,
 .phpmga-about p.phpmga-todo,
 .phpmga-about p.phpmga-todo span {
     font-family: 'komika_titleregular' !important;
     font-size: 1.43em !important;
 }
 
+form label,
 .phpmga-todo span {
-    color: #ccc;
+    color: #999 !important;
 }
 
 .phpmga-about p {
@@ -106,7 +108,7 @@ h1 {
 
 /* avlima */
 #phpmga_background {
-    background: transparent url("../../images/topo-phpmga.png") no-repeat center fixed;
+    background: transparent url("../../images/topo-phpmga.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -307,4 +309,3 @@ h1 {
     font-weight: normal;
     font-style: normal;
 }
-
