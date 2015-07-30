@@ -1,0 +1,311 @@
+html, body, #phpmga_background {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.pushable > .pusher {
+    -webkit-backface-visibility: inherit; /* Chrome, Safari, Opera */
+    backface-visibility: inherit;
+    position: inherit;
+}
+
+#container-about {
+    min-height: 600px;
+}
+
+#container-about img {
+    margin: auto;
+}
+
+#container-staff {
+    min-height: 600px;
+    background-color: rgb(239, 239, 239);
+}
+
+#container-contact {
+    min-height: 600px;
+    background-color: #fff;
+}
+
+.about.hidden {
+    display: none !important
+}
+
+/* avlima */
+.button, input, textarea {
+    border-radius: 0px !important;
+}
+
+.phpmga-perfil {
+    border-radius: 0px !important;
+}
+
+.phpmga-perfil div.image {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: #79BD9A;
+}
+
+.phpmga-perfil div img {
+    padding: 10px;
+}
+
+.ui.circular.image, .ui.circular.image>*, .ui.circular.images .image, .ui.circular.images .image>* {
+    border-radius: 500rem !important;
+}
+
+.ui.card>:first-child, .ui.cards>.card>:first-child {
+
+}
+
+.phpmga-about h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #3B8686 !important;
+}
+
+.phpmga-staff h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #2185d0 !important;
+}
+
+.phpmga-contact h3 {
+    font-family: '3dumbregular' !important;
+    font-size: 2.714rem !important;
+    color: #79BD9A !important;
+}
+
+form label,
+.phpmga-about p.phpmga-todo,
+.phpmga-about p.phpmga-todo span {
+    font-family: 'komika_titleregular' !important;
+    font-size: 1.43em !important;
+}
+
+form label,
+.phpmga-todo span {
+    color: #999 !important;
+}
+
+.phpmga-about p {
+    font-size: 1.23em !important;
+}
+
+/* avlima */
+#phpmga_background {
+    background: transparent url("../../images/topo-phpmga.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+/* avlima */
+.phpmga-menu {
+    border-width: 0px !important;
+    border-bottom: none !important;
+}
+
+/* avlima */
+.footer {
+    background-color: #293F29 !important;
+}
+
+/* avlima */
+.phpmga-button-primary {
+    background-color: #79BD9A !important;
+    color: #fff !important;
+}
+
+/* avlima */
+.phpmga-button-primary:visited {
+    background-color: #3B8686 !important;
+}
+
+/* avlima */
+.phpmga-button-primary:hover {
+    background-color: #3B8686 !important;
+}
+
+/* avlima */
+.ui.phpmga-menu-hidden .item {
+    color: #fff !important;
+}
+
+/* avlima */
+.phpmga-sidebar {
+    background-color: #293F29 !important;
+}
+
+/* avlima */
+.ui.phpmga-menu-hidden .active.item {
+    background-color: #546054;
+}
+
+/* avlima */
+.phpmga-menu-hidden {
+    background-color: #293F29 !important;
+}
+
+.hidden.menu {
+    display: none;
+}
+
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+}
+
+.masthead .logo.item img {
+    margin-right: 1em;
+}
+
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 8em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
+}
+
+.ui.vertical.stripe .floated.image {
+    clear: both;
+}
+
+.ui.vertical.stripe p {
+    font-size: 1.33em;
+}
+
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
+}
+
+.quote.stripe.segment {
+    padding: 0em;
+}
+
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+
+.ui.message {
+    border-radius: 0px;
+}
+
+.ui.message .header:not(.ui), .ui.vertical.stripe p {
+    font-size: inherit;
+}
+
+.pushable > .pusher {
+    -webkit-backface-visibility: inherit; /* Chrome, Safari, Opera */
+    backface-visibility: inherit;
+    position: inherit;
+}
+
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+
+    .masthead.segment {
+        min-height: 350px;
+    }
+
+    #phpmga_background {
+        background: transparent url("../../images/topo-phpmga.png") no-repeat center fixed;
+    }
+
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+}
+
+@font-face {
+    font-family: '2dumbregular';
+    src: url('../fonts/2Dumb-webfont.eot');
+    src: url('../fonts/2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/2Dumb-webfont.woff') format('woff'),
+    url('../fonts/2Dumb-webfont.ttf') format('truetype'),
+    url('../fonts/2Dumb-webfont.svg#2dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '3dumbregular';
+    src: url('../fonts/3Dumb-webfont.eot');
+    src: url('../fonts/3Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/3Dumb-webfont.woff') format('woff'),
+    url('../fonts/3Dumb-webfont.ttf') format('truetype'),
+    url('../fonts/3Dumb-webfont.svg#3dumbregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'komika_titleregular';
+    src: url('../fonts/KomikaTitle-webfont.eot');
+    src: url('../fonts/KomikaTitle-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/KomikaTitle-webfont.woff') format('woff'),
+    url('../fonts/KomikaTitle-webfont.ttf') format('truetype'),
+    url('../fonts/KomikaTitle-webfont.svg#komika_titleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
