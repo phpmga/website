@@ -17,6 +17,11 @@ h1 {
     font-weight: 400;
 }
 
+.start-menu {
+    position: absolute;
+    bottom: 60px;
+}
+
 .pushable > .pusher {
     -webkit-backface-visibility: inherit; /* Chrome, Safari, Opera */
     backface-visibility: inherit;
@@ -41,7 +46,8 @@ h1 {
     background-color: #fff;
 }
 
-.about.hidden {
+.about.hidden,
+.staff-row.hidden {
     display: none !important
 }
 

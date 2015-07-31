@@ -17,28 +17,28 @@
 <!-- Following Menu -->
 <div class="ui large top fixed hidden menu phpmga-menu-hidden">
     <div class="ui container">
-        <a class="active item">Home</a>
-        <a class="item">Sobre</a>
-        <a class="item">Staff</a>
-        <a class="item">Contato</a>
+        <a href="#phpmga_background" du-smooth-scroll du-scrollspy class="item">Home</a>
+        <a href="#container-about" du-smooth-scroll du-scrollspy class="item">Sobre</a>
+        <a href="#container-staff" du-smooth-scroll du-scrollspy class="item">Staff</a>
+        <a href="#container-contact" du-smooth-scroll du-scrollspy class="item">Contato</a>
     </div>
 </div>
 
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar labeled icon menu phpmga-sidebar">
-    <a class="item">
+    <a href="#phpmga_background" du-smooth-scroll du-scrollspy class="item">
         <i class="home icon"></i>
         Home
     </a>
-    <a class="item">
+    <a href="#container-about" du-smooth-scroll du-scrollspy class="item">
         <i class="block layout icon"></i>
         Sobre
     </a>
-    <a class="item">
+    <a href="#container-staff" du-smooth-scroll du-scrollspy class="item">
         <i class="users icon"></i>
         Staff
     </a>
-    <a class="item">
+    <a href="#container-contact" du-smooth-scroll du-scrollspy class="item">
         <i class="mail icon"></i>
         Contato
     </a>
@@ -52,13 +52,13 @@
                 <a class="toc item">
                     <i class="sidebar icon"></i>
                 </a>
-                <a class="active item">Home</a>
-                <a class="item">Sobre</a>
-                <a class="item">Staff</a>
-                <a class="item">Contato</a>
+                <a href="#phpmga_background" du-smooth-scroll du-scrollspy class="active item">Home</a>
+                <a href="#container-about" du-smooth-scroll du-scrollspy class="item">Sobre</a>
+                <a href="#container-staff" du-smooth-scroll du-scrollspy class="item">Staff</a>
+                <a href="#container-contact" du-smooth-scroll du-scrollspy class="item">Contato</a>
             </div>
         </div>
-
+        <div class="start-menu"></div>
     </div>
 
     <div ng-view>
@@ -90,6 +90,7 @@
                 </div>
                 <div class="seven wide column">
                     <h4 class="ui inverted header">Footer Header</h4>
+
                     <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
             </div>

@@ -1,1 +1,0 @@
-$(window).scroll(function(){var n=window.scrollY,i=document.getElementById("container-1"),t=$("#image-1"),o=$("#content-1");n+300>=i.offsetTop&&0==t.transition("is visible")&&(t.transition("horizontal flip",1e3),o.transition("fade left",1e3))});

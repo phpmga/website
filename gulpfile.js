@@ -24,6 +24,7 @@ elixir(function (mix) {
     // Copy Angular dependencies
     mix.copy(bowerDir + 'angular/angular.min.js', 'resources/assets/js/angular.min.js');
     mix.copy(bowerDir + 'angular-route/angular-route.min.js', 'resources/assets/js/angular-route.min.js');
+    mix.copy(bowerDir + 'angular-scroll/angular-scroll.min.js', 'resources/assets/js/angular-scroll.min.js');
 
     // Copy Semantic UI dependencies
     mix.copy(bowerDir + 'semantic-ui/dist/semantic.min.js', 'resources/assets/js/semantic.min.js');
@@ -40,7 +41,8 @@ elixir(function (mix) {
         'resources/assets/js/jquery.min.js',
         'resources/assets/js/semantic.min.js',
         'resources/assets/js/angular.min.js',
-        'resources/assets/js/angular-route.min.js'
+        'resources/assets/js/angular-route.min.js',
+        'resources/assets/js/angular-scroll.min.js'
     ], 'public/js/vendor.js');
 
     // Mix custom resources
