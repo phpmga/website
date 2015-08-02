@@ -67,31 +67,21 @@
 
     <div class="ui inverted vertical footer segment">
         <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
-                <div class="three wide column">
-                    <h4 class="ui inverted header">About</h4>
-
+            <div class="ui stackable inverted divided equal height grid">
+                <div class="three wide column"></div>
+                <div class="six wide column">
+                    <p>Feito com <i class="heart icon"></i>por artesãos da cidade verde.</p>
                     <div class="ui inverted link list">
-                        <a href="#" class="item">Sitemap</a>
-                        <a href="#" class="item">Contact Us</a>
-                        <a href="#" class="item">Religious Ceremonies</a>
-                        <a href="#" class="item">Gazebo Plans</a>
+                        <a href="https://github.com/phpmga" class="item" target="_blank"><i class="big github icon"></i></a>
                     </div>
                 </div>
-                <div class="three wide column">
-                    <h4 class="ui inverted header">Services</h4>
+                <div class="four wide column">
+                    <h4 class="ui inverted header">Fique por dentro!</h4>
 
-                    <div class="ui inverted link list">
-                        <a href="#" class="item">Banana Pre-Order</a>
-                        <a href="#" class="item">DNA FAQ</a>
-                        <a href="#" class="item">How To Access</a>
-                        <a href="#" class="item">Favorite X-Men</a>
+                    <div class="ui action input">
+                        <input type="text" placeholder="$email = ">
+                        <button class="ui button">Assinar</button>
                     </div>
-                </div>
-                <div class="seven wide column">
-                    <h4 class="ui inverted header">Footer Header</h4>
-
-                    <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </div>
             </div>
         </div>
