@@ -34,8 +34,8 @@ $(window).scroll(function () {
         $staff_first.transition('horizontal flip', 1);
         $('#staff-first-row-container .column')
             .transition({
-                animation : 'jiggle',
-                duration  : 800,
+                animation : 'scale',
+                reverse   : 'auto',
                 interval  : 200
             });
 
@@ -43,8 +43,8 @@ $(window).scroll(function () {
             $staff_second.transition('horizontal flip', 1);
             $('#staff-second-row-container .column')
                 .transition({
-                    animation : 'jiggle',
-                    duration  : 800,
+                    animation : 'scale',
+                    reverse   : 'auto',
                     interval  : 200
                 });
         }, 1000);
