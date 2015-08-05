@@ -42,10 +42,11 @@ h1 {
 }
 
 #container-contact {
-    min-height: 600px;
+    min-height: 880px;
     background-color: #fff;
 }
 
+.contact-form.hidden,
 .about.hidden,
 .staff-row.hidden {
     display: none !important
