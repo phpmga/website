@@ -70,7 +70,7 @@
             <div class="ui stackable inverted divided equal height grid">
                 <div class="three wide column"></div>
                 <div class="six wide column">
-                    <p>Feito com <i class="heart icon"></i>por artesãos da cidade verde.</p>
+                    <p>Feito por artesãos da cidade verde.</p>
                     <div class="ui inverted link list">
                         <a href="https://github.com/phpmga" class="item" target="_blank"><i class="big github icon"></i></a>
                     </div>
