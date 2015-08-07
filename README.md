@@ -83,6 +83,33 @@ npm install
 ```bash
 gulp --production
 ```
+## Publish website to phpmga.net
+
+1 - Automate SSH connection:
+    You need to edit/create the file ~/.ssh/config on your computer. Then add this content.
+
+```bash
+Host phpmga.net
+  User freebsd
+  PreferredAuthentications publickey
+```
+
+2 - Add phpmga.net as a remote. On your computer, navigate to your git repo and run this command.
+
+```bash
+git remote add phpmga-publish phpmga.net:/usr/local/www/phpmga.net/
+```
+
+3 - Execute the command below to publish website
+
+* First publish
+```bash
+git push phpmga-publish master
+```
+* Other publish
+```bash
+git push phpmga-publish
+```
 
 ##Copyright and license
 
