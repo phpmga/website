@@ -21,7 +21,7 @@ angular.module('app.controllers', [])
                     rules: [
                         {
                             type: 'empty',
-                            prompt: 'Por favor iforme seu nome'
+                            prompt: 'Por favor informe seu nome'
                         }
                     ]
                 },
@@ -30,7 +30,7 @@ angular.module('app.controllers', [])
                     rules: [
                         {
                             type: 'email',
-                            prompt: 'Por favor iforme um e-mail válido'
+                            prompt: 'Por favor informe um e-mail válido'
                         }
                     ]
                 },
@@ -39,7 +39,7 @@ angular.module('app.controllers', [])
                     rules: [
                         {
                             type: 'empty',
-                            prompt: 'Por favor iforme o assunto'
+                            prompt: 'Por favor informe o assunto'
                         }
                     ]
                 },
