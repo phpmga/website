@@ -72,8 +72,11 @@
                 <div class="three wide column"></div>
                 <div class="six wide column">
                     <p>Feito por artesãos da cidade verde.</p>
-                    <div class="ui inverted link list">
+                    <div class="ui inverted horizontal link list">
                         <a href="https://github.com/phpmga" class="item" target="_blank"><i class="big github icon"></i></a>
+                        <a href="http://php.net/manual/pt_BR/install.php" class="item" target="_blank">
+                            <img src="images/php-logo.png" width="32px" class="ui image"/>
+                        </a>
                     </div>
                 </div>
                 <div class="four wide column">
