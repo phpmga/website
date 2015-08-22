@@ -58,6 +58,8 @@ angular.module('app.controllers', [])
                 on: blur,
                 inline: true,
                 onSuccess: function () {
+                    var $button = $('#submit').addClass('loading').prop('disabled', true);
+
                     $http.post('/email/contact', {
                         name: $scope.name,
                         email: $scope.email,
@@ -65,11 +67,15 @@ angular.module('app.controllers', [])
                         message: $scope.message
                     })
                         .success(function (data) {
+                            $button.removeClass('loading').prop('disabled', false);
+
                             if (data.status == "success") {
                                 $scope.sendmail.type = "success";
                                 $scope.sendmail.valid = true;
                                 $scope.sendmail.message = data.message;
-                                console.log('pohas');
+
+                                $('#contact_form').find('input,textarea').val('');
+
                                 return false;
                             } else {
                                 $scope.sendmail.type = "negative";
