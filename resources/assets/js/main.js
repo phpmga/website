@@ -34,28 +34,26 @@ $(window).scroll(function () {
         $text.transition('fade left', 1000);
     }
 
-    if ($(container_staff).length && (pos + 100) >= container_staff.offsetTop && staff_animation == false) {
-        //$staff_first.transition('horizontal flip', 1);
-        staff_animation = true;
-        $('#staff-first-row-container .column')
-            .transition({
-                animation : 'pulse',
-                reverse   : true,
-                interval  : 200
-            });
+    //if ($(container_staff).length && (pos + 100) >= container_staff.offsetTop && staff_animation == false) {
+    //    staff_animation = true;
+    //    $('#staff-first-row-container .column')
+    //        .transition({
+    //            animation : 'pulse',
+    //            reverse   : true,
+    //            interval  : 200
+    //        });
+    //
+    //    setTimeout(function(){
+    //        $('#staff-second-row-container .column')
+    //            .transition({
+    //                animation : 'pulse',
+    //                reverse   : true,
+    //                interval  : 200
+    //            });
+    //    }, 1000);
+    //}
 
-        setTimeout(function(){
-            //$staff_second.transition('horizontal flip', 1);
-            $('#staff-second-row-container .column')
-                .transition({
-                    animation : 'pulse',
-                    reverse   : true,
-                    interval  : 200
-                });
-        }, 1000);
-    }
-
-    if ($(container_contact).length && (pos + 100) >= container_contact.offsetTop && $form.transition('is visible') == false) {
-        $form.transition('scale');
-    }
+    //if ($(container_contact).length && (pos + 100) >= container_contact.offsetTop && $form.transition('is visible') == false) {
+    //    $form.transition('scale');
+    //}
 });
