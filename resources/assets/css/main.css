@@ -46,9 +46,9 @@ h1 {
     background-color: #fff;
 }
 
-.contact-form.hidden,
-.about.hidden,
-.staff-row.hidden {
+/*.contact-form.hidden,*/
+/*.staff-row.hidden,*/
+.about.hidden {
     display: none !important
 }
 
@@ -80,20 +80,20 @@ h1 {
 }
 
 .phpmga-about h3 {
-    font-family: '3dumbregular' !important;
-    font-size: 2.714rem !important;
+    /*font-family: '3dumbregular' !important;*/
+    font-size: 1.714rem !important;
     color: #3B8686 !important;
 }
 
 .phpmga-staff h3 {
-    font-family: '3dumbregular' !important;
-    font-size: 2.714rem !important;
+    /*font-family: '3dumbregular' !important;*/
+    font-size: 1.714rem !important;
     color: #2185d0 !important;
 }
 
 .phpmga-contact h3 {
-    font-family: '3dumbregular' !important;
-    font-size: 2.714rem !important;
+    /*font-family: '3dumbregular' !important;*/
+    font-size: 1.714rem !important;
     color: #79BD9A !important;
 }
 
