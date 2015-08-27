@@ -73,6 +73,7 @@
                 <div class="six wide column">
                     <p>Feito por artesãos da cidade verde.</p>
                     <div class="ui inverted horizontal link list">
+                        <a href="https://www.facebook.com/pages/PhpMga/492166247613145" class="item" target="_blank"><i class="big facebook icon"></i></a>
                         <a href="https://github.com/phpmga" class="item" target="_blank"><i class="big github icon"></i></a>
                         <a href="http://php.net/manual/pt_BR/install.php" class="item" target="_blank">
                             <img src="images/php-logo.png" width="32px" class="ui image"/>
