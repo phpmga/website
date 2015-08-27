@@ -61,8 +61,10 @@ $(window).scroll(function () {
 $('#newsletter').submit(function(e) {
     e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
-    var $email = $(this).find('input[name="email"]');
-    var $token = $(this).find('input[name="_token"]');
+    var $form = $(this);
+    var $button = $(this).find('button[type="submit"]');
+    var $email = $form.find('input[name="email"]');
+    var $token = $form.find('input[name="_token"]');
 
     $email.parent().removeClass('error');
 
@@ -72,15 +74,20 @@ $('#newsletter').submit(function(e) {
         return false;
     }
 
+    $button.prop('disabled', true);
+
     $.post('/email/news', {
         'email': $email.val(),
         '_token': $token.val()
     },
     function(data) {
+        $email.val('');
+        $button.prop('disabled', false);
+
         if(!!data.success) {
-            alert('Obrigado por assinar nossa newsletter, aguarde novidades!');
+            $form.addClass('success');
         } else {
-            alert('Não foi possível assinar a newsletter, tente novamente mais tarde.');
+            $form.addClass('error');
         }
     })
 });

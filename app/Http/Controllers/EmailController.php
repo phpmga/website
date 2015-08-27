@@ -118,5 +118,7 @@ class EmailController extends Controller
 
             return Response::make($body);
         }
+
+        return Response::make("N&atilde;o foi poss&iacute;vel confirmar sua inscri&ccedil;&atilde;o, tente novamente mais tarde.");
     }
 }

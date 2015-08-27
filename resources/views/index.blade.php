@@ -83,6 +83,15 @@
                     <form id="newsletter" class="ui form" method="post" action="/email/news">
                         <h4 class="ui inverted header">Fique por dentro!</h4>
 
+                        <div class="ui error message">
+                            <div class="header">Ocorreu um erro!</div>
+                            <p>Não foi possível assinar a newsletter, tente novamente mais tarde.</p>
+                        </div>
+                        <div class="ui success message">
+                            <div class="header">Sucesso!</div>
+                            <p>Obrigado por assinar nossa newsletter, aguarde novidades!</p>
+                        </div>
+
                         <div class="ui action input">
                             <input type="text" name="email" placeholder="$email = ">
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
