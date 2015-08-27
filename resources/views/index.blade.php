@@ -80,12 +80,15 @@
                     </div>
                 </div>
                 <div class="four wide column">
-                    <h4 class="ui inverted header">Fique por dentro!</h4>
+                    <form id="newsletter" class="ui form" method="post" action="/email/news">
+                        <h4 class="ui inverted header">Fique por dentro!</h4>
 
-                    <div class="ui action input">
-                        <input type="text" placeholder="$email = ">
-                        <button class="ui button">Assinar</button>
-                    </div>
+                        <div class="ui action input">
+                            <input type="text" name="email" placeholder="$email = ">
+                            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                            <button class="ui button" type="submit">Assinar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

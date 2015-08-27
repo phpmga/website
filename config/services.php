@@ -17,6 +17,7 @@ return [
     'mailgun' => [
         'domain' => 'phpmga.net',
         'secret' => 'key-bd4b1d668a5b3c4a73c7f9612015b815',
+        'public' => 'pubkey-f507261a6d8b6119192f617b2d461a42',
         'contact' => 'contato@phpmga.net'
     ],
 

@@ -49,11 +49,11 @@ class EmailController extends Controller
      */
     public function postNews(Request $request) {
         $mg = new Mailgun(config('services.mailgun.secret'));
-        $mgValidate = new Mailgun('pub-key-example');
+        $mgValidate = new Mailgun(config('services.mailgun.public'));
 
         $domain = config('services.mailgun.domain');
         $mailingList = 'novidades@phpmga.net';
-        $secretPassphrase = 'a_secret_passphrase';
+        $secretPassphrase = env('APP_KEY');
         $recipientAddress = $request->get('email');
 
         $result = $mgValidate->get('address/validate', array('address' => $recipientAddress));
@@ -75,10 +75,14 @@ class EmailController extends Controller
                                                   confirme</a> sua inscrição.<br><br>Obrigado!</body></html>"));
 
             # Finally, let's add the subscriber to a Mailing List, as unsubscribed, so we can track non-conversions.
-            $mg->post("lists/$mailingList/members", array('address'    => $recipientAddress,
+            if($mg->post("lists/$mailingList/members", array('address'    => $recipientAddress,
                                                           'subscribed' => 'no',
-                                                          'upsert'     => 'yes'));
+                                                          'upsert'     => 'yes'))) {
+                return Response::make(['success' => true]);
+            }
         }
+
+        return Response::make(['success' => false]);
     }
 
     /**
@@ -93,13 +97,15 @@ class EmailController extends Controller
         $optInHandler = $mg->OptInHandler();
 
         $inboundHash = $request->get('hash');
-        $secretPassphrase = 'a_secret_passphrase';
+        $secretPassphrase = env('APP_KEY');
 
         $hashValidation = $optInHandler->validateHash($secretPassphrase, $inboundHash);
 
         if($hashValidation){
             $validatedList = $hashValidation['mailingList'];
             $validatedRecipient = $hashValidation['recipientAddress'];
+
+            $body = "<html><body>Olá,<br><br>Adicionamos seu email na nossa lista, $validatedList!<br><br>Obrigado!</body></html>";
 
             $mg->put("lists/$validatedList/members/$validatedRecipient",
                      array('address'    => $validatedRecipient,
@@ -108,7 +114,9 @@ class EmailController extends Controller
             $mg->sendMessage($domain, array('from'    => config('services.mailgun.contact'),
                                             'to'      => $validatedRecipient,
                                             'subject' => 'Confirmado!',
-                                            'html'    => "<html><body>Olá,<br><br>Adicionamos seu email na nossa lista, $validatedList!<br><br>Obrigado!</body></html>"));
+                                            'html'    => $body));
+
+            return Response::make($body);
         }
     }
 }

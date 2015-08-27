@@ -57,4 +57,31 @@ $(window).scroll(function () {
     //    $form.transition('scale');
     //}
 });
+
+$('#newsletter').submit(function(e) {
+    e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+    var $email = $(this).find('input[name="email"]');
+    var $token = $(this).find('input[name="_token"]');
+
+    $email.parent().removeClass('error');
+
+    if($email.val() == '') {
+        $email.parent().addClass('error');
+
+        return false;
+    }
+
+    $.post('/email/news', {
+        'email': $email.val(),
+        '_token': $token.val()
+    },
+    function(data) {
+        if(!!data.success) {
+            alert('Obrigado por assinar nossa newsletter, aguarde novidades!');
+        } else {
+            alert('Não foi possível assinar a newsletter, tente novamente mais tarde.');
+        }
+    })
+});
 //# sourceMappingURL=main.js.map
