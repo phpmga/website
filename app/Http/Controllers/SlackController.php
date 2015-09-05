@@ -37,7 +37,7 @@ class SlackController extends Controller
     /**
      * Envia email de contato.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param  Request  $request
      * @return Response
      */
     public function getIndex(Request $request) {
@@ -78,11 +78,11 @@ class SlackController extends Controller
      *
      * @param    SlackBadgeService $badge
      * @param    Request           $request
-     * @return   \Illuminate\Http\Response
+     * @return   Response
      * @internal param SlackStatusService $slack
      * @internal param Poser $poser
      */
-    public function getGenerateBadge(SlackBadgeService $badge, Request $request) {
+    public function getBadge(SlackBadgeService $badge, Request $request) {
         return $badge->generate($request->get('format', 'flat'));
     }
 }
