@@ -30,7 +30,6 @@ class SlackBadgeService
     {
         $this->slack = $slack;
         $this->poser = $poser;
-        app()->configure('slack-badge');
     }
     /**
      * Generate a badge poser

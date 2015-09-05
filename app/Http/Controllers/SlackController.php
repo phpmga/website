@@ -7,6 +7,7 @@
  */
 
 use App\Jobs\SlackInvitationJob;
+use App\Services\SlackBadgeService;
 use App\Services\SlackStatusService;
 use Illuminate\Contracts\Cache\Factory as Cache;
 use Illuminate\Http\Request;
