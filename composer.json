@@ -7,7 +7,10 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.1.*",
-        "mailgun/mailgun-php": "~1.7.2"
+        "mailgun/mailgun-php": "~1.7.2",
+        "vluzrmos/badge-poser": "1.0.*",
+        "vluzrmos/language-detector": "1.0.*",
+        "vluzrmos/slack-api": "0.4.*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

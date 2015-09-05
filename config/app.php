@@ -143,19 +143,23 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\TranslatorServiceProvider::class,
+        \Vluzrmos\SlackApi\SlackApiServiceProvider::class,
+        \Vluzrmos\BadgePoser\BadgePoserServiceProvider::class,
+        \Vluzrmos\LanguageDetector\Providers\LanguageDetectorServiceProvider::class
 
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Class Aliases
-    |--------------------------------------------------------------------------
-    |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
-    |
-    */
+/*
+|--------------------------------------------------------------------------
+| Class Aliases
+|--------------------------------------------------------------------------
+|
+| This array of class aliases will be registered when this application
+| is started. However, feel free to register as many as you wish as
+| the aliases are "lazy" loaded so they don't hinder performance.
+|
+*/
 
     'aliases' => [
 
@@ -191,7 +195,18 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-
+        'SlackApi'              => Vluzrmos\SlackApi\Facades\SlackApi::class,
+        'SlackChannel'          => Vluzrmos\SlackApi\Facades\SlackChannel::class,
+        'SlackChat'             => Vluzrmos\SlackApi\Facades\SlackChat::class,
+        'SlackGroup'            => Vluzrmos\SlackApi\Facades\SlackGroup::class,
+        'SlackFile'             => Vluzrmos\SlackApi\Facades\SlackFile::class,
+        'SlackSearch'           => Vluzrmos\SlackApi\Facades\SlackSearch::class,
+        'SlackInstantMessage'   => Vluzrmos\SlackApi\Facades\SlackInstantMessage::class,
+        'SlackUser'             => Vluzrmos\SlackApi\Facades\SlackUser::class,
+        'SlackStar'             => Vluzrmos\SlackApi\Facades\SlackStar::class,
+        'SlackUserAdmin'        => Vluzrmos\SlackApi\Facades\SlackUserAdmin::class,
+        'SlackRealTimeMessage'  => Vluzrmos\SlackApi\Facades\SlackRealTimeMessage::class,
+        'SlackTeam'             => Vluzrmos\SlackApi\Facades\SlackTeam::class,
     ],
 
 ];

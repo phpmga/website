@@ -26,3 +26,5 @@ Route::get('/', function () {
 */
 
 Route::controller('email', 'EmailController');
+
+Route::controller('slack', 'SlackController');
