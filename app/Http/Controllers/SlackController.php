@@ -56,7 +56,6 @@ class SlackController extends Controller
         $this->validate(
             $request,
             [
-                'username' => 'required',
                 'email' => 'required|email',
             ]
         );

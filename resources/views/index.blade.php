@@ -87,7 +87,11 @@
                     <div class="ui inverted horizontal link list">
                         <a href="https://www.facebook.com/pages/PhpMga/492166247613145" class="item" target="_blank" title="Facebook"><i class="big facebook icon"></i></a>
                         <a href="https://github.com/phpmga" class="item" target="_blank" title="Github"><i class="big github icon"></i></a>
-                        <a href="https://php-mga.slack.com/" class="item" target="_blank" title="Slack"><i class="big slack icon"></i></a>
+
+                        <a href="/slack" target="_blank" class="item">
+                            <i class="big slack icon"></i>
+                        </a>
+
                         <a href="http://php.net/manual/pt_BR/install.php" class="item" target="_blank" title="PHP">
                             <img src="images/php-logo.png" width="32px" class="ui image"/>
                         </a>
