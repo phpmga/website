@@ -7,6 +7,6 @@
  */
 
 return [
-    'color' => 'F1504F',
+    'color' => '293F29',
     'format' => 'flat', // allowed 'flat' and 'plastic'
 ];
