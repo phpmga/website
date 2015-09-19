@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="DbMCcMUJ8xPX65DfsCnDxlJBJEDI-xnPRAGCNqyGCe8"/>
     <meta name="description" content="Web Site da Comunidade PHP Maringá">
     <meta name="author" content="Comunidade PHP Maringá">
 
