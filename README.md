@@ -89,7 +89,7 @@ gulp --production
     You need to edit/create the file ~/.ssh/config on your computer. Then add this content.
 
 ```bash
-Host phpmga.net
+  Host phpmga.net
   User freebsd
   PreferredAuthentications publickey
 ```
